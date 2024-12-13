@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Word Counter</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="container">
-    <h1>Word Counter</h1>
-    <textarea id="text-area" placeholder="Type your text here..."></textarea>
-    <div class="result">
-      <p><span id="word-count">0</span> Words</p>
+    <div class="container">
+        <h1>Word Counter</h1>
+        <textarea id="inputText" placeholder="Type your text here..."></textarea>
+        <div class="results">
+            <p>Words: <span id="wordCount">0</span></p>
+            <p>Characters: <span id="charCount">0</span></p>
+            <p>Sentences: <span id="sentenceCount">0</span></p>
+            <p>Paragraphs: <span id="paragraphCount">0</span></p>
+        </div>
     </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
