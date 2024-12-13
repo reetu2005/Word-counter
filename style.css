@@ -1,12 +1,12 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
 }
 
 .container {
@@ -14,6 +14,14 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
 }
 
 textarea {
@@ -24,8 +32,25 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    box-sizing: border-box;
+    resize: vertical;
 }
 
 .results {
     font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.results p {
+    flex: 1 1 45%;
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    .results p {
+        flex: 1 1 100%;
+        text-align: center;
+    }
 }
